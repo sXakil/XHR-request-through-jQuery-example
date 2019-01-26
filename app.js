@@ -1,4 +1,7 @@
-$('#next').click(function() {
+$(document).ready(refersh);
+$('#next').click(refersh);
+
+function refersh() {
 	$.ajax({
 		method: 'GET',
 		url: 'https://api.thecatapi.com/v1/images/search',
