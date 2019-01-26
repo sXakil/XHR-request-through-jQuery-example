@@ -1,5 +1,6 @@
-$(document).ready(refersh);
-$('#next').click(refersh);
+$(document).ready(function() {
+	$('#next').click(refersh);
+})
 
 function refersh() {
 	$.ajax({
@@ -13,4 +14,4 @@ function refersh() {
 			$('#error').html(error.status + ' ' + error.message);
 		}
 	})
-})
+}
